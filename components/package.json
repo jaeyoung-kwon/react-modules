@@ -1,6 +1,6 @@
 {
   "name": "@jae-o/modal-component-module",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "modal component module",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -18,13 +18,15 @@
     "build-storybook": "storybook build",
     "chromatic": "dotenv -e .env -- npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@emotion/styled": "^11.14.0"
   },
   "devDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "@chromatic-com/storybook": "^3.2.6",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
