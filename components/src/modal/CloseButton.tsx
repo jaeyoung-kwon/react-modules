@@ -27,7 +27,7 @@ function CloseButton({ style, className }: CloseButtonProps) {
       onClick={onClose}
     >
       <img
-        src={new URL('./assets/close-button.png').href}
+        src={new URL('./assets/close-button.png', import.meta.url).href}
         alt="모달 닫기 버튼"
       />
     </StyledCloseButton>
