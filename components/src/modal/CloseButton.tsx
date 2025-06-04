@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { CSSProperties, useMemo } from 'react';
 import { useModalContext } from './ModalProvider';
+import closeButtonImage from './assets/close-button.png';
 
 // ============================== Types ==============================
 
@@ -26,10 +27,7 @@ function CloseButton({ style, className }: CloseButtonProps) {
       className={className}
       onClick={onClose}
     >
-      <img
-        src={new URL('./assets/close-button.png', import.meta.url).href}
-        alt="모달 닫기 버튼"
-      />
+      <img src={closeButtonImage} alt="모달 닫기 버튼" />
     </StyledCloseButton>
   );
 }
